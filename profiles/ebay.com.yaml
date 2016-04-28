@@ -12,7 +12,7 @@ password:
       - symbols
     mustnot:
     - en: be the same as previous used passwords
-    blacklist: [ spaces, "[", "]", "<", ">" ]
+    blacklist: [ spaces, "[", "]", "<", ">", "//" ]
     notes:
     - url: http://pages.ebay.com/help/new/contextual/create_password.html
   reset:
