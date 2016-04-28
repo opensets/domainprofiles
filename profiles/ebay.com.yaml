@@ -13,6 +13,8 @@ password:
       - symbols
     mustnot:
     - en: be the same as previous used passwords
+    - en: be on an undisclosed list of common passwords like "abc123"
+    - en: contain the word "password"
     blacklist: [
       spaces,
       "[", "]", "<", ">", "{", "}",
