@@ -19,6 +19,10 @@ password:
         expire: 15m
   change:
     url: https://c9.io/account/settings
+    notes:
+    - en: >
+        The user settings page features a "Request password" button
+        that initiates a password reset request.
 registration:
   url: https://c9.io/signup
 login:
