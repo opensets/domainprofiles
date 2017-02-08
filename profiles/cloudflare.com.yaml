@@ -16,8 +16,8 @@ password:
           sender: no-reply@cloudflare.com
           body: url token
         expire: 2h
-      usability:
-        password: double
+    usability:
+      password: double
   change:
     url: https://www.cloudflare.com/a/account/my-account
     reauth: password
