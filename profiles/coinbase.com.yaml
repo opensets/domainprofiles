@@ -69,5 +69,8 @@ login:
       characters: hidden
     persist:
       checkbox: unchecked
+sessions:
+  management:
+    url: https://www.coinbase.com/settings/security_settings#active_sessions
 reviewed:
   date: 2017-02-10T15:03:31.561Z
