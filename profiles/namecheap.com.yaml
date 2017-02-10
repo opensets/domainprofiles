@@ -22,11 +22,11 @@ password:
       change:
         form:
           newpassword:
-            visibility: showable
+            characters: showable
           repeat:
             newpassword:
               input: required
-              visibility: showable
+              characters: showable
       submit:
         destination:
           page: stub
