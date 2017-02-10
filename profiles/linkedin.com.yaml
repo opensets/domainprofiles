@@ -42,7 +42,7 @@ password:
     form:
       oldpassword:
         input: required
-         characters: hidden
+        characters: hidden
       newpassword:
         characters: hidden
       repeat:
