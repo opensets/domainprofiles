@@ -6,7 +6,7 @@ password:
     mustnot:
     - en: be all the same character
   reset:
-    url: https://www.linkedin.com/uas/request-password-reset
+    url: https://www.linkedin.com/passwordReset
     flow:
       request:
         accepts: email phone
