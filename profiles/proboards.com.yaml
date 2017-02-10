@@ -20,9 +20,6 @@ password:
         expire: 1h
       change:
         form:
-          oldpassword:
-            input: required
-            characters: hidden
           newpassword:
             characters: hidden
           repeat:
