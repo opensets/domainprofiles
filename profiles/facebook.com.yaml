@@ -30,7 +30,7 @@ password:
         destination:
           page: settings
         sessions:
-          own: unchanged
+          own: login
         expire: now
   change:
     url: https://www.facebook.com/settings?tab=account&section=password
