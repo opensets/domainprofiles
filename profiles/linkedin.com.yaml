@@ -32,6 +32,7 @@ password:
               are signed in after submitting the new password.
         sessions:
           own: login
+          notes:
           - en: >
               The form to submit the password includes a checkbox
               to control whether other sessions should be logged
