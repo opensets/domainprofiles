@@ -1,5 +1,12 @@
 name: Coinbase
 password:
+  value:
+    length:
+      min: 8
+    notes:
+    - en: >
+        Passwords must be rated "good" and not "too weak" by
+        an opaque judgment algorithm.
   reset:
     url: https://coinbase.com/password_resets/new
     flow:
@@ -24,7 +31,17 @@ password:
           own: login
         expire: now
   change:
-    url: https://coinbase.com/account#change_password_modal
+    url: https://coinbase.com/settings#change_password_modal
+    form:
+      oldpassword:
+        input: required
+        characters: hidden
+      newpassword:
+        characters: hidden
+      repeat:
+        newpassword:
+          input: required
+          characters: hidden
 registration:
   url: https://www.coinbase.com/signup
   form:
