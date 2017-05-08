@@ -1,5 +1,7 @@
 # The OPWS Dataset
 
+[![Join the chat at https://gitter.im/opws/opws-dataset](https://badges.gitter.im/opws/opws-dataset.svg)](https://gitter.im/opws/opws-dataset?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Profiles of the security support and user account systems of various sites.
 
 [![Test Status](https://img.shields.io/circleci/project/opws/opws-dataset/master.svg?style=flat&label=tests)][tests]
