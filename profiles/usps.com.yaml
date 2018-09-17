@@ -9,7 +9,7 @@ username:
       classes:
       - alpha
       - digit
-      strings: ['-','.','&','@','?','_','’',',','/','"']
+      strings: ['-','.','&','@','?','_',"'",',','/','"']
 password:
   value:
     length:
@@ -33,7 +33,7 @@ password:
   reset:
     flow:
       request:
-        url: https://reg.usps.com/entreg/ForgotPasswordAction_input
+        url: https://reg.usps.com/forgotpassword
         form:
           username: # (which may be your email address)
             input: required
@@ -51,7 +51,7 @@ password:
           input: required
           masking: masked
 registration:
-  url: https://reg.usps.com/entreg/RegistrationPortalAction_input
+  url: https://reg.usps.com/register
   form:
     username:
       input: required
@@ -67,7 +67,7 @@ registration:
       email:
         input: required
 login:
-  url: https://reg.usps.com/entreg/LoginPortalAction_input
+  url: https://reg.usps.com/login
   form:
     username:
       input: required
