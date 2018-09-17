@@ -28,13 +28,28 @@ password:
       - alpha
       - digit
       strings: ['-','(',')','.','&','@','?',"'",'#','/','"','+','!']
+    mustnot:
+    - en: 'include more than two consecutive identical characters'
   reset:
-    url: https://reg.usps.com/entreg/ForgotPasswordAction_input
     flow:
       request:
+        url: https://reg.usps.com/entreg/ForgotPasswordAction_input
         form:
-          account:
-            accepts: [username] # (which may be your email address)
+          username: # (which may be your email address)
+            input: required
+  change:
+    url: https://reg.usps.com/preferences#password-icon
+    form:
+      oldpassword:
+        input: required
+        masking: masked
+      newpassword:
+        input: required
+        masking: masked
+      repeat:
+        newpassword:
+          input: required
+          masking: masked
 registration:
   url: https://reg.usps.com/entreg/RegistrationPortalAction_input
   form:
@@ -42,21 +57,22 @@ registration:
       input: required
     password:
       input: required
-      characters: masked
+      masking: masked
     email:
       input: required
     repeat:
       password:
         input: required
-        characters: masked
+        masking: masked
       email:
         input: required
 login:
   url: https://reg.usps.com/entreg/LoginPortalAction_input
   form:
-    account:
-      accepts: [username]
+    username:
+      input: required
     password:
-      characters: masked
+      input: required
+      masking: masked
 reviewed:
   date: 2018-09-17T23:04:49.902Z
