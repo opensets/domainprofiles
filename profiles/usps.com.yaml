@@ -18,6 +18,8 @@ password:
     blacklist:
       variables:
       - username
+    mustnot:
+    - en: 'include more than two consecutive identical characters'
   contents:
     required:
     - classes:
@@ -28,8 +30,6 @@ password:
       - alpha
       - digit
       strings: ['-','(',')','.','&','@','?',"'",'#','/','"','+','!']
-    mustnot:
-    - en: 'include more than two consecutive identical characters'
   reset:
     flow:
       request:
